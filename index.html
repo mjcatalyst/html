@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Page!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav class="navbar">
+            <img src="Logo.png" alt="logo">
+            <p class="logo-text"> Portfolio</p>
+            <ul class="nav-menu">
+                <li class="navitems"><a id="Home" class="nav-links" href="index.html" style="--i:1;">Home</a></li>
+                <li class="navitems"><a id="About" class="nav-links" href="#AboutID" style="--i:2;">About</a></li>
+                <li class="navitems"><a id="Contact" class="nav-links" href="#SocialID" style="--i:3;">Contact</a></li>
+                <li class="navitems"><a id="Social" class="nav-links" href="#" style="--i:4;">Skills</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+        <div class="container">
+            <div class="containerItems">
+                <div class="devinfo">
+
+                    <div class="hello">Hello, It's me </div>
+                    <div class="name">Manjeet Kumar</div>
+                    <h1 class="about">And I'am<span class="type-text"> </span></h1>
+                    <button class="CV-button"><i class="fa-solid fa-download"></i>Download CV</button>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100006525940239" target="_blank"><i
+                                class="fa-brands fa-facebook"></i>Facebook</a>
+                        <a href="https://instagram.com/__manjeet.mj__?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a>
+                        <a href="https://twitter.com/Manjeet31194304?t=EbhmD6HTLdiU4nOwI5AaUA&s=09" target="_blank"><i
+                                class="fa-brands fa-twitter"></i>Twitter</a>
+                    </div>
+                </div>
+
+                <div class="devpic">
+                    <img height="90%" src="my_pic_portfolio.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- About Section -->
+        <div class="about-section" id="AboutID">
+            <h1 class="about-heading">About</h1>
+            <div class="aboutContainer">
+
+                <div class="aboutBox" id="box1"><i class="fa-solid fa-code"></i>
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum vel reiciendis quidem maxime
+                        ab recusandae officia placeat illo impedit molestias?</p>
+                </div>
+
+                <div class="aboutBox" id="box2"><i class="fa-solid fa-object-group"></i>
+                    <h3>UI Designer</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut optio enim non dolorum
+                        fuga impedit sunt animi autem asperiores!</p>
+                </div>
+
+                <div class="aboutBox" id="box3"><i class="fa-solid fa-marker"></i>
+                    <h3>Content Writer</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ut natus tempore nemo magni illo
+                        autem porro perferendis aliquam illum.</p>
+                </div>
+            </div>
+        </div>
+        <!--Contact ME Section -->
+
+        <div class="contactContainer">
+            <div class="contactText"><h3>Contact Me</h3>
+                <div class="social" id="SocialID">
+                    <a href="https://www.facebook.com/profile.php?id=100006525940239" target="_blank"><i
+                            class="fa-brands fa-facebook" style="color: #4267B2;"></i></a>
+                    <a href="https://instagram.com/__manjeet.mj__?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                            class="fa-brands fa-instagram" style="color: #ee6e2a;"></i></a>
+                    <a href="https://twitter.com/Manjeet31194304?t=EbhmD6HTLdiU4nOwI5AaUA&s=09" target="_blank"><i
+                            class="fa-brands fa-twitter" style="color:#00acee;"></i></a>
+                </div>
+            </div>
+            
+            <div class="contactbox">
+                <div class="contactForm">
+                    <input type="text" required>
+                    <label for="">Your name</label>
+                </div>
+                <div class="contactForm">
+                    <input type="text" required>
+                    <label for="">Your Email</label>
+                </div>
+                <div class="contactForm">
+                    <input type="text" required>
+                    <label for="">Phone Number</label>
+                </div>
+                <div class="contactForm">
+                    <textarea name="message" id="textarea" cols="20" rows="10" required></textarea>
+                    <label for="">Your Message</label>
+                </div>
+                <div><button class="Form-Submit-Button">Submit</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/34e504ee65.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".type-text", {
+            strings: ["", "Frontend-Developer", "Blogger", "photographer"],
+            typeSpeed: 70,
+            backSpeed: 30,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
